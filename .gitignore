@@ -1,0 +1,29 @@
+# Defaults
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+
+# Next.js
+.next/
+out/
+build/
+
+# Environments (CRITICAL FOR SECURITY)
+.env
+.env.*
+!.env.example
+
+# File Uploads
+backend/uploads/
+uploads/
+
+# OS / Editor
+.DS_Store
+.vscode/
+.idea/
+*.log
+
+# Database
+*.sqlite
+*.db
