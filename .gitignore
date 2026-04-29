@@ -1,12 +1,15 @@
 # Defaults
 node_modules/
-npm-debug.log
-yarn-error.log
-yarn-debug.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+logs
+*.log
 
 # Next.js
-.next/
-out/
+.next
+out
 build/
 
 # Environments (CRITICAL FOR SECURITY)
@@ -21,9 +24,74 @@ uploads/
 # OS / Editor
 .DS_Store
 .vscode/
+.vscode-test
 .idea/
-*.log
+.tern-port
 
 # Database
 *.sqlite
 *.db
+
+# Diagnostic reports
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory
+lib-cov
+coverage
+*.lcov
+.nyc_output
+
+# Grunt & Bower
+.grunt
+bower_components
+.lock-wscript
+build/Release
+jspm_packages/
+web_modules/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Package Managers
+.npm
+.pnpm-store
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Caches
+.eslintcache
+.stylelintcache
+.node_repl_history
+.cache
+.parcel-cache
+
+# Others
+*.tgz
+.yarn-integrity
+.nuxt
+dist
+.output
+.vuepress/dist
+.temp
+.svelte-kit/
+**/.vitepress/dist
+**/.vitepress/cache
+.docusaurus
+.serverless/
+.fusebox/
+.dynamodb/
+.firebase/
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+.vite/
